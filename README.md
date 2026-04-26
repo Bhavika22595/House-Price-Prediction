@@ -223,14 +223,3 @@ Chrome must be installed. Output saves to `~/Downloads/magicbricks_properties.cs
 
 ---
 
-## What we'd do differently
-
-- Replace `time.sleep()` with Selenium's `WebDriverWait` — the fixed 5 second waits slow everything down, explicit waits would only wait as long as actually needed
-- Make the scraper resumable — if it crashes the `processed_addresses` set resets on restart so it re-scrapes from the top. Should load already-scraped titles from the CSV at startup
-- Cross-validation instead of a single train-test split
-- Add distance to metro/IT parks as a feature — location quality matters a lot for Hyderabad prices
-- Build a small web frontend instead of testing via Postman
-
----
-
-Built using Azure for Students free credits. Team of 3.
