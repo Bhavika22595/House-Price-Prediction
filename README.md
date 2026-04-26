@@ -23,8 +23,9 @@ Buying a house in Hyderabad is confusing — two similar flats in the same area 
 ## Step 1 — Scraping the data
 
 We scraped Residential Houses and Villas listed for sale in Hyderabad from MagicBricks. The URL we scraped covered 1BHK to 5BHK+ across both property types:
-
+```python
 magicbricks.com/property-for-sale/residential-real-estate?bedroom=>5,1,2,3,4&proptype=Residential-House,Villa&cityName=Hyderabad
+```
 
 MagicBricks loads listings dynamically with JavaScript so BeautifulSoup doesn't work here — it only sees the raw HTML before JS runs. Selenium controls an actual Chrome browser so it waits for everything to load properly.
 
